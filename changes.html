@@ -1,0 +1,281 @@
+<h2>Multicraft 2.3.2 <em>UPDATED</em></h2>
+<p>24. Sep 2019</p>
+<p> </p>
+<p>Multicraft release 2.3.2 is a maintenance release that addresses an issue with plugin downloads due to changes in the way these plugins are hosted.</p>
+<p>We highly appreciate all feedback, bugreports and suggestions and we will continue improving Multicraft based on your feedback.</p>
+<p>If you find a security relevant issue with Multicraft we also offer a bug bounty of up to 750$ per issue depending on severity.</p>
+<p><strong>UPDATE:</strong> In the mean time download restrictions have changed again, causing downloads to fail for some users. If you are affected, please add the following to the <em>[multicraft]</em> section of your multicraft.conf file (make sure it&#39;s a single line):</p>
+<pre><code>downloadHeadersPlugins = {&quot;Accept&quot;: &quot;text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&quot;, &quot;Accept-Language&quot;: &quot;en-US,en;q=0.5&quot;, &quot;Accept-Encoding&quot;:&quot;gzip, deflate&quot;, &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Multicraft Plugin Manager) like FireFox/45.0&quot;, &quot;DNT&quot;: &quot;1&quot;, &quot;Connection&quot;: &quot;keep-alive&quot;}
+</code></pre>
+<p> </p>
+<h2>Multicraft 2.4.0 PREVIEW Release</h2>
+<p>08. Aug 2019</p>
+<p> </p>
+<p>Latest build number: <strong>908070</strong> - Updated Aug 08.</p>
+<p>In preparation for the 2.4.0 release we are making the latest PREVIEW build of Multicraft available for public testing. This build currently has to be considered experimental.</p>
+<pre><code>Changelog for 2.4.0:
+- Implemented support for conditional scheduled tasks
+- Implemented new full backup method with support for external directories
+- Added setting for forced templates per conf file allowing for fully automated mod installation
+- Implemented CPU limit support for Docker containers
+- Implemented UDP support for Docker containers
+- Implemented delayed daemon query setting to speed up page loads
+- Implemented support for stopping servers using signals instead of console commands
+- Fixed an issue where an invalid theme can prevent user profile display
+- Fixed confiuration reloading not working under certain conditions
+- Fixed encoding issue with command cache under Windows
+- PHP compatibility fixes
+- Added drop shadow to resource display for better visibility
+- Always allow superusers to edit a user theme
+- Improved daemon list performance in server view
+- Improved plugin downloads to be faster for some sources
+</code></pre>
+<p>The preview release is available here:
+<strong>Linux</strong>: <a href='http://www.multicraft.org/download/linux64?version=preview'>Multicraft 2.4.0 Preview 64bit</a></p>
+<p>We appreciate all feedback, bugreports and suggestions. We will also award monetary bounties for certain security critical bugs, please contact us for details if you think you may have found an applicable bug.</p>
+<h2>Multicraft 2.3.1</h2>
+<p>16. May 2019</p>
+<p> </p>
+<p>Multicraft release 2.3.1 is a maintenance release that addresses several minor issues and updates some of the libraries used by Multicraft. A recent issue with certain downloads failing when using the plugin downloader has also been addressed.</p>
+<p>Changelog:</p>
+<ul>
+<li>Fixed downloader for certain plugin lists</li>
+<li>Fixed json encode on installations with broken iconv libraries</li>
+<li>Fixed user creation under certain conditions</li>
+<li>Fixes for legacy PHP versions as well as PHP 7.2</li>
+<li>Set correct quota when initializing a server</li>
+<li>Updated Yii to latest version</li>
+<li>Updated default server.properties options</li>
+
+</ul>
+<p>We highly appreciate all feedback, bugreports and suggestions and we will continue improving Multicraft based on your feedback.</p>
+<p>If you find a security relevant issue with Multicraft we also offer a bug bounty of up to 750$ per issue depending on severity.</p>
+<h2>Multicraft 2.3.0</h2>
+<p>07. January 2019</p>
+<p> </p>
+<p>Multicraft release 2.3.0 is now available after an extended period of testing as a preview release. There have been a number of minor fixes and improvements over the course of this preview release period. If you&#39;re using any of the features mentioned in the changelog we do recommend upgrading to the final release.</p>
+<p>We&#39;re always looking for user feedback so if you&#39;d like to see anything implemented or changed in Multicraft please do let us know, we continuously extend and improve Multicraft based on such feedback.</p>
+<p>If you find a security relevant issue with Multicraft we also offer a bug bounty of up to 750$ per issue depending on severity.</p>
+<p>The full changelog can be found further down in this post, heres an short list of a few highlights:</p>
+<ul>
+<li>Implemented additional ports feature allowing users to assign a random port to their server</li>
+<li>Implemented default server settings override page</li>
+<li>Implemented global FTP access feature</li>
+<li>Implemented partial console updates for improved performance and less bandwidth usage</li>
+<li>Created new installer for Windows</li>
+<li>Added header based clickjacking protection</li>
+<li>Plus additional small and large features, improvements and fixes!</li>
+
+</ul>
+<p>See the <a href='http://multicraft.org/multicraft-2.3.0.txt'>Full Multicraft 2.3.0 Changelog</a></p>
+<p>We highly appreciate all feedback, bugreports and suggestions and we will continue improving Multicraft based on your feedback.</p>
+<h2>New Windows Installer</h2>
+<p>18. December 2018</p>
+<p> </p>
+<p>The Windows installer for Multicraft has been updated to be more user friendly and more flexible. All services related to Multicraft (webserver, database server and Multicraft daemon) are installed as Windows services so you can start/stop them directly in the Windows service manager.
+The installer is designed to support multiple installations in different locations. When re-installing to the same location it will keep existing user/server data. We still highly recommend backing up your user and server data prior to doing any changes to your installation.</p>
+<p>Please let us know how the installer worked for you and if you have any suggestions for further improving it or additional feature requests.</p>
+<h2>New Privacy Policy</h2>
+<p>24. May 2018</p>
+<p> </p>
+<p>We are commited to protecting your personal information and your right to privacy. We have always handled all personal data of our customers with great care and to comply with GDPR we have now also published our new privacy policy for you to review on our website:
+<a href='http://www.multicraft.org/site/page/privacy'>Pricacy Policy</a></p>
+<p>Please to let us know if you have any questions, concerns or general feedback regarding our privacy policy. You can always reach us using our <a href='http://www.multicraft.org/site/contact'>contact form</a> or by sending an email to <a href='mailto:info@multicraft.org'>info@multicraft.org</a>.</p>
+<h2>Multicraft 2.2.1</h2>
+<p>10. May 2018</p>
+<p> </p>
+<p>We are announcing the availability of a new maintenance release for Multicraft. Version 2.2.1 fixes an issue related to plugin downloads using the online plugin list, an incompatibility with the Docker port range feature as well as several other minor issues.</p>
+<p>Changelog:</p>
+<ul>
+<li>Fixed Docker port range feature</li>
+<li>Fixed bruteforce protection when using SQLite</li>
+<li>Fixed plugin downloads sometimes not working</li>
+<li>Improved parsing for certain console output formats</li>
+<li>Updated http library</li>
+
+</ul>
+<p>As always, we highly appreciate all feedback, bugreports and suggestions and we will continue improving Multicraft based on your feedback.</p>
+<h2>Multicraft 2.2.0</h2>
+<p>30. November 2017</p>
+<p> </p>
+<p>We are very pleased to announce the release of version 2.2.0 of Multicraft! After several months of preview releases and after that several weeks of release candidate testing by us and customers who wanted to get early access to the new package we are marking the current build the final release of version 2.2.0.</p>
+<p>There have once again been some minor fixes thanks to our <a href='https://bugcrowd.com/multicraft'>Bug Bounty Program</a> where we offer up to 750$ for relevant security issues.</p>
+<p>The full changelog can be found further down in this post, heres an short list of a few highlights:</p>
+<ul>
+<li>Implemented automatic JAR update feature on startup</li>
+<li>Implemented support for JAR categories and categorized listing</li>
+<li>Implemented getOwnApiKey function to better support apps using the API</li>
+<li>Added support for FTPS</li>
+<li>Fixes for PHP 7.1</li>
+<li>Improved clickjacking protection</li>
+<li>Added additional ports setting for servers, map additional ports to Docker containers</li>
+<li>Improved brute-force protection</li>
+<li>Increased time between ingame messages for free version</li>
+<li>Many, many more small and large features, improvements and fixes!</li>
+
+</ul>
+<p>See the <a href='http://multicraft.org/multicraft-2.2.0.txt'>Full Multicraft 2.2.0 Changelog</a></p>
+<p>We highly appreciate all feedback, bugreports and suggestions and we will continue improving Multicraft based on your feedback.</p>
+<h2>Multicraft 2.1.1</h2>
+<p>09. December 2016</p>
+<p> </p>
+<p>Multicraft 2.1.1 has been released as a first maintenance release of the latest Multicraft version. This release contains mostly minor cosmetic changes and fixes as well as improvements to Docker support so upgrading is optional and only required if you are encountering any of the issues listed in the changelog.</p>
+<p>On the daemon it is sufficient to replace the &quot;bin/multicraft&quot; binary. On the panel you can replace the panel files without running the install.php since there have been no database changes.</p>
+<p>Changelog:</p>
+<ul>
+<li>Show warning when Docker is enabled multiuser mode isn&#39;t</li>
+<li>Implemented IP lookup for DOCKER_IP variable since Docker doesn&#39;t support hostnames</li>
+<li>Fixed misplaced condition on login screen</li>
+<li>Fixed default settings for new versions of Docker</li>
+<li>Fixed several net2ftp translation encodings</li>
+<li>Fixed resource usage reporting for servers running in Docker</li>
+
+</ul>
+<p>As always, we highly appreciate all feedback, bugreports and suggestions and we will continue improving Multicraft based on your feedback.</p>
+<h2>BukGet Shutdown</h2>
+<p>07. December 2016</p>
+<p> </p>
+<p>We are sorry to see the BukGet project being shut down and we would like to extend a warm thank you to the people who have maintained this project in the past.</p>
+<p>If you are using Multicraft version 2.1 the plugin browser should continue working as expected.</p>
+<p>In older versions of Multicraft the plugin browser will no longer work so we recommend updating to the latest version to address this. If that&#39;s not (yet) possible for you the issue can be worked around temporarily by replacing line 14 (the API URL) of the &quot;protected/models/BgPlugin.php&quot; file with the following:</p>
+<pre><code>    static $apiUrl = &#39;http://plugins.multicraft.org/bg_compat/bukkit&#39;;
+</code></pre>
+<p> </p>
+<h2>Multicraft 2.1.0</h2>
+<p>25. November 2016</p>
+<p> </p>
+<p>We are proud to announce the release of version 2.1.0 of Multicraft! As with previous releases we have begun offering preview releases for this version over an extended period of time, mainly to be able to quickly implement and adapt new features suggested by users without affecting users who wish to remain on a stable version. This release is again a result of a lot of user suggestions and we encourage any kind of feedback and feature requests for the next release. If you&#39;re running a preview release we strongly recommend upgrading to the final 2.1.0 version.</p>
+<p>We have been able to address some minor security related issue thanks to our <a href='https://bugcrowd.com/multicraft'>Bug Bounty Program</a> and we have raised the maximum reward to 750$ to encourage even more submissions.</p>
+<p>The full changelog is once more too long to fit into the news entry so here&#39;s a short list of the most important changes with the full list available below:</p>
+<ul>
+<li>Support for running servers in Docker containers</li>
+<li>Two-factor authentication using Google Authenticator</li>
+<li>Subdomain and SRV record creation using CloudFlare (allows connecting to servers without specifying a port)</li>
+<li>Spigot and Pocketmine support for plugin browser</li>
+<li>User role customization</li>
+<li>IP filter for staff users</li>
+<li>Security improvements</li>
+<li>Many, many more small and large features, improvements and fixes!</li>
+
+</ul>
+<p>See the <a href='http://multicraft.org/multicraft-2.1.0.txt'>Full Multicraft 2.1.0 Changelog</a></p>
+<p>We highly appreciate all feedback, bugreports and suggestions and we will continue improving Multicraft based on your feedback.</p>
+<h2>Multicraft Apps</h2>
+<p>14. Nov 2016</p>
+<p> </p>
+<p>The steady growth of Multicraft has motivated the creation of several apps for different platforms. While Multicraft comes with a mobile theme that works on most devices out of the box we wanted to highlight some community created apps that can help control your servers. Most apps support basic controls and server access and even multi-server management. All of these highlighted apps are completely free and they have been created independently, we are not affiliated with them in any way.</p>
+<p>To use these apps a recent version of the control panel is required (2.0+), also the hosting provider needs to supply an API key for you to enter to use the app.</p>
+<p>(in order of last update)</p>
+<ul>
+<li><p><a href='https://play.google.com/store/apps/details?id=com.silocitylabs.multicraft'>Remote for Multicraft (Android)</a></p>
+<p>The Remote for Multicraft App is for Minecraft server admins that use Multicraft control panel. Connect to your Multicraft control panel to check your server status and players from your phone. Features:</p>
+<ul>
+<li>server stats: RAM, CPU, player count</li>
+<li>power controls: start/stop/kick/ban/pardon</li>
+<li>player list and info: level, online/offline, last seen time</li>
+<li>status check of Minecraft&#39;s and Mojang&#39;s services</li>
+
+</ul>
+</li>
+<li><p><a href='https://itunes.apple.com/us/app/mobilecraft/id1043877770'>MobileCraft (iOS)</a></p>
+<p>MobileCraft is the portable version for the famous hosting platform &quot;Multicraft&quot;. It fits anyone from server hosts to casual server owners. All you need to have to control your server, just one click away. You can view your console, kick players, start and stop your server anytime of the day with just a click in MobileCraft.</p>
+<ul>
+<li>Server management (start, stop, restart, delete, suspend, resume)</li>
+<li>Console (view console, and send console commands)</li>
+<li>Online players (kick and ban players directly from the app with a button)</li>
+<li>User management (change password, delete users, list servers)</li>
+<li>MYSQL database (create, change password)</li>
+<li>And many more!</li>
+
+</ul>
+</li>
+<li><p><a href='https://play.google.com/store/apps/details?id=com.oliverdunk.pocketpanel'>PocketPanel for Minecraft (Android)</a></p>
+<p>Server Administration shouldn&#39;t be hard - now, it&#39;s easy:</p>
+<ul>
+<li>Control your server with actions like start, stop, restart and more.</li>
+<li>Check your console and run commands.</li>
+<li>For panel administrators, create servers, delete them and control servers globally.</li>
+
+</ul>
+<h2>Billing System Modules</h2>
+<p>25. February 2016</p>
+<p> </p>
+<p>All Multicraft billing system modules are being updated for Multicraft 2.0. The Blesta module has already supported features that the other modules lacked but it&#39;s also being updated for the latest changes in Multicraft. The WHMCS module is currently in beta at a lowered price and it&#39;s expected to be released soon. The BoxBilling module has already been released and its documentation updated.</p>
+<p><strong>Blesta</strong>
+The module supports most functions already, some new server fields will be added with the next release. The module is developed and maintained by Blesta so it&#39;s included for free with the billing system.</p>
+<p><strong>WHMCS</strong>
+The module has been overhauled to allow all settings to be configured with added support for configurable options and custom fields for any server/module setting. Changes and documentation can be <a href='http://multicraft.org/site/docs/whmcs3'>found here</a>. Once it&#39;s released the new module can be requested through a support ticket from an address that has previously purchased the module.</p>
+<p><strong>BoxBilling</strong>
+The module has been updated for the latest version of BoxBilling and additional server/module settings have been added. The updated documentation can be <a href='http://multicraft.org/site/docs/boxbilling'>found here</a>. The new module can be requested through a support ticket from an address that has previously purchased the module.</p>
+<h2>Multicraft 2.0.1</h2>
+<p>02. February 2016</p>
+<p> </p>
+<p>Multicraft 2.0.1 has been released as a first maintenance release of the latest Multicraft version. This release contains mostly minor cosmetic changes and fixes so upgrading is optional and only required if you are encountering any of the issues listed in the changelog.</p>
+<p>On the daemon it is sufficient to replace the &quot;bin/multicraft&quot; binary. On the panel you can replace the panel files without running the install.php since there have been no database changes.</p>
+<ul>
+<li>Fixed missing server suspend icon in classic theme</li>
+<li>Fixed some potentially unhandled exceptions on the daemon</li>
+<li>Fixed password length not being enforced on password reset</li>
+<li>Fixed PHP7 error in net2ftp</li>
+<li>Improved FTP login error message for clarity</li>
+<li>Updated Yii to latest version</li>
+<li>Updated copyright notices for 2016</li>
+<li>Updated library links on about page</li>
+<li>Installation: Hide typed value on password in put in setup.sh and fixed escaping of certain characters</li>
+<li>Installation: Remove other access rights to setup.config for safety</li>
+<li>Installation: Work around Chrome autocomplete in install.php</li>
+<li>MulticraftAPI.php: Added missing parameter for createPlayer</li>
+<li>MulticraftAPI.php: Fixed potential warning</li>
+<li>MulticraftAPI.php: Improved error reporting</li>
+
+</ul>
+<p>As always, we highly appreciate all feedback, bugreports and suggestions and we will continue improving Multicraft based on your feedback.</p>
+<h2>Multicraft 2.0.0</h2>
+<p>12. December 2015</p>
+<p> </p>
+<p>We are proud to announce the release of version 2.0.0 of Multicraft! A lot of effort has gone into making sure that we can implement as many user suggestions as possible with this new version of Multicraft to make it even more powerful and easy to use. The release has been postponed a number of times because of feature requests that we consider to be very useful to the vast majority of Multicraft users. Due to this we have begun offering preview releases for download longer before the final release than usual. If you&#39;re running a preview release we strongly recommend upgrading to the final 2.0.0 version.</p>
+<p>In addition to implementing countless new features and improvements we have also been able to make Multicraft even more secure thanks to the researchers who have contributed to our <a href='https://bugcrowd.com/multicraft'>Bug Bounty Program</a> we have running with Bugcrowd.</p>
+<p>As part of this release we are replacing the Windows all-in-one package with the <a href='https://bitnami.com/stack/multicraft/installer#windows'>Multicraft Bitnami Stack for Windows</a> for personal use. There is also a <a href='https://bitnami.com/stack/multicraft/installer#linux'>Multicraft Bitnami Stack for Linux</a> that we recommend for personal use if you cannot install all requirements for Multicraft. For hosting providers we still recommend using our Linux packages for maximum security and flexibility.</p>
+<p>In good Multicraft tradition the length of the changelog is record breaking. There have been so many new features and changes that even a summarized list of the most important changes would be too long for this news entry so here&#39;s just a small selection:</p>
+<ul>
+<li><ul>
+<li>New theme using Bootstrap</li>
+<li>Improved server crash and console handling, including the option to use .conf files for arbitrary JAR names</li>
+<li>New Staff role for full access to all servers without giving access to panel settings</li>
+<li>Server template system</li>
+<li>Improved Bukkit plugin list</li>
+<li>Optional startup parameters</li>
+<li>API improvements and additions</li>
+<li>Security improvements</li>
+<li>Linux filesystem quota support</li>
+<li>Configuration reloading</li>
+<li>Improved performance, particularly for very large installations (1000+ servers)</li>
+<li>Removed single instance restriction so you can run multiple daemons with different Owned license keys on the same system</li>
+<li>Reduced the number of times the banner is shown in the free version</li>
+<li>Many, many more small and large features, improvements and fixes!</li>
+
+</ul>
+</li>
+
+</ul>
+<p>See the <a href='http://multicraft.org/multicraft-2.0.0.txt'>Full Multicraft 2.0.0 Changelog</a></p>
+<p>We highly appreciate all feedback, bugreports and suggestions and we will continue improving Multicraft based on your feedback.</p>
+<h2>Multicraft Bug Bounty Program</h2>
+<p>22. May 2015</p>
+<p> </p>
+<p>As a last step before the finalization of the new release we have ordered a security review for Multicraft and we have launched a Bug Bounty program with the good folks over at <a href='https://bugcrowd.com/'>Bugcrowd</a>.
+The program has initially been launched as private so if you&#39;re interested in participating and earning monetary rewards for reporting security critical bugs please head over to <a href='https://bugcrowd.com/user/sign_up'>bugcrowd.com</a> to register for a researcher account. Once you have done so please let us know so we can add you as a researcher to our program.</p>
+<p>The bug bounty program will be made public in the future once we have left the initial selection of researchers enough time to review the code.</p>
+<h2>Blesta Multicraft Module <em>- Updated</em></h2>
+<p>29. September 2014</p>
+<p> </p>
+<p>We are happy to announce that the good folks over at <a href='http://www.blesta.com/'>Blesta</a> have developed a module to fully support Multicraft with their billing software platform. A video of the module in action can be seen in their blog entry regarding this development:
+<a href='http://www.blesta.com/2014/06/03/new-module-multicraft/'>Blesta Blog: New Multicraft Module</a></p>
+<p>The module is part of the official v3.3 release of Blesta so you do not have to install any addons to use this module. If you are using an older version of Blesta you can download the module separately from <a href='http://www.blesta.com/forums/index.php?/topic/2743-module-multicraft/'>this forum post</a>.</p>
+<p>The documentation for this new module can be found here:
+<a href='http://docs.blesta.com/display/user/Multicraft'>Blesta Multicraft Module Documentation</a></p>
+<p>You can try the new module without obligation by installing the free trial of Blesta and connecting it to your existing Multicraft installation.</p>
+<p>We will also be sending out 15% discount coupons for Blesta owned licenses with every new purchase of any Multicraft license.</p>
+</li>
+
+</ul>
